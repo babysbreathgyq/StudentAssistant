@@ -14,6 +14,15 @@
         android:theme="@style/Theme.StudentAssistant"
         tools:targetApi="31">
         <activity
+            android:name=".activity.ContactActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.DietActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ScheduleActivity"
+            android:exported="false" />
+        <activity
             android:name=".activity.PayDetailActivity"
             android:exported="false" />
         <activity

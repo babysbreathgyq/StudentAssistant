@@ -9,7 +9,9 @@
         <entry key="..\:/AndroidProject/StudentAssistant/app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.152" />
         <entry key="..\:/AndroidProject/StudentAssistant/app/src/main/res/drawable/ic_launcher_background.xml" value="0.152" />
         <entry key="..\:/AndroidProject/StudentAssistant/app/src/main/res/drawable/ic_study_fill.xml" value="0.152" />
+        <entry key="..\:/AndroidProject/StudentAssistant/app/src/main/res/layout/activity_contact.xml" value="0.10833333333333334" />
         <entry key="..\:/AndroidProject/StudentAssistant/app/src/main/res/layout/activity_data_analyse.xml" value="0.2484375" />
+        <entry key="..\:/AndroidProject/StudentAssistant/app/src/main/res/layout/activity_diet.xml" value="0.1" />
         <entry key="..\:/AndroidProject/StudentAssistant/app/src/main/res/layout/activity_economics.xml" value="0.1802536231884058" />
         <entry key="..\:/AndroidProject/StudentAssistant/app/src/main/res/layout/activity_income_detail.xml" value="0.2484375" />
         <entry key="..\:/AndroidProject/StudentAssistant/app/src/main/res/layout/activity_login.xml" value="0.11574074074074074" />
@@ -18,9 +20,11 @@
         <entry key="..\:/AndroidProject/StudentAssistant/app/src/main/res/layout/activity_new_pay.xml" value="0.2484375" />
         <entry key="..\:/AndroidProject/StudentAssistant/app/src/main/res/layout/activity_pay_detail.xml" value="0.17604166666666668" />
         <entry key="..\:/AndroidProject/StudentAssistant/app/src/main/res/layout/activity_register.xml" value="0.11574074074074074" />
+        <entry key="..\:/AndroidProject/StudentAssistant/app/src/main/res/layout/activity_schedule.xml" value="0.17604166666666668" />
         <entry key="..\:/AndroidProject/StudentAssistant/app/src/main/res/layout/activity_sign_in.xml" value="0.1802536231884058" />
         <entry key="..\:/AndroidProject/StudentAssistant/app/src/main/res/layout/activity_to_do_list.xml" value="0.1802536231884058" />
         <entry key="..\:/AndroidProject/StudentAssistant/app/src/main/res/layout/activity_welcome.xml" value="0.176" />
+        <entry key="..\:/AndroidProject/StudentAssistant/app/src/main/res/layout/calendar_text_day.xml" value="0.10833333333333334" />
         <entry key="..\:/AndroidProject/StudentAssistant/app/src/main/res/layout/fragment_home.xml" value="0.176" />
         <entry key="..\:/AndroidProject/StudentAssistant/app/src/main/res/layout/fragment_motion.xml" value="0.11574074074074074" />
         <entry key="..\:/AndroidProject/StudentAssistant/app/src/main/res/layout/fragment_personal.xml" value="0.11574074074074074" />

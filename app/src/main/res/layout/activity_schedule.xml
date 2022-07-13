@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp">
+
+    <com.example.studentassistant.activity.NewCalendar xmlns:NewCalendarNS="http://schemas.android.com/apk/res/com.example.studentassistant"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        NewCalendarNS:dateFormat="MMMM yyyy">
+
+    </com.example.studentassistant.activity.NewCalendar>
+</RelativeLayout>
