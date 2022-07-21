@@ -1,6 +1,8 @@
 package com.example.studentassistant.bean;
 
-public class OutPayBean {
+import java.io.Serializable;
+
+public class OutPayBean implements Serializable {
     private int id;
     private double money;
     private String time;

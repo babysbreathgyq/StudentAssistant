@@ -1,6 +1,9 @@
 package com.example.studentassistant.bean;
 
-public class IncomeBean {
+import java.io.Serializable;
+
+// 将对象进行序列化，便于数据在页面进行保存和传递
+public class IncomeBean implements Serializable {
     private int id;
     private double money;
     private String time;

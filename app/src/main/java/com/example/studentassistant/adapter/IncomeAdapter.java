@@ -1,6 +1,8 @@
 package com.example.studentassistant.adapter;
 
+import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,6 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.studentassistant.R;
 import com.example.studentassistant.bean.IncomeBean;
+import com.example.studentassistant.other.InManagerActivity;
 
 import java.util.List;
 
@@ -44,6 +47,19 @@ public class IncomeAdapter extends RecyclerView.Adapter<IncomeAdapter.ViewHolder
         holder.item_time.setText(incomeBean.getTime());
         holder.item_remark.setText(incomeBean.getRemark());
         holder.item_money.setText("+" + incomeBean.getMoney());
+        // 完善：点击某一个条目，跳转到收入管理页面
+        // 找出每一行的子布局，给其添加单击事件
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // 跳转到收入管理界面的代码
+                Intent intent = new Intent(mContext, InManagerActivity.class);
+                // 跳转之前把数据传递过去
+                intent.putExtra("seri",incomeBean);
+                mContext.startActivity(intent);
+                ((Activity)mContext).finish();
+            }
+        });
     }
 
     // RecyclerView一共有多少个子项

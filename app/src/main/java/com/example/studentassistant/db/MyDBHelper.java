@@ -33,6 +33,8 @@ public class MyDBHelper extends SQLiteOpenHelper {
         db.execSQL("create table in_come(id integer primary key autoincrement, inMoney double, inTime varchar(20), inType varchar(30), inPayer varchar(30), inRemark varchar(30))");
         // 创建支出表
         db.execSQL("create table pay_out(id integer primary key autoincrement, outMoney double, outTime varchar(20), outType varchar(30), outPayee varchar(30), outRemark varchar(30))");
+        // 创建待办事项表
+        db.execSQL("create table todolist(id integer primary key autoincrement, textData varchar(100))");
     }
 
     // 2. 升级数据库

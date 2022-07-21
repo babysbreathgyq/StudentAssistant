@@ -1,6 +1,8 @@
 package com.example.studentassistant.adapter;
 
+import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,6 +13,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.studentassistant.R;
 import com.example.studentassistant.bean.OutPayBean;
+import com.example.studentassistant.other.InManagerActivity;
+import com.example.studentassistant.other.OutManagerActivity;
 
 import java.util.List;
 
@@ -39,12 +43,25 @@ public class OutPayAdapter extends RecyclerView.Adapter<OutPayAdapter.ViewHolder
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
         // 每一条记录就是我们封装的一个类
-        OutPayBean outPayBean = arr2.get(position);
+        final OutPayBean outPayBean = arr2.get(position);
         holder.item_payee.setText("付款给" + outPayBean.getPayee());
         holder.item_type.setText(outPayBean.getType());
         holder.item_time.setText(outPayBean.getTime());
         holder.item_remark.setText(outPayBean.getRemark());
         holder.item_money.setText("-" + outPayBean.getMoney());
+        // 完善：点击某一个条目，跳转到支出管理页面
+        // 找出每一行的子布局，给其添加单击事件
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // 跳转到收入管理界面的代码
+                Intent intent = new Intent(mContext, OutManagerActivity.class);
+                // 跳转之前把数据传递过去
+                intent.putExtra("sero",outPayBean);
+                mContext.startActivity(intent);
+                ((Activity)mContext).finish();
+            }
+        });
     }
 
     // RecyclerView一共有多少个子项
